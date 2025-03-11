@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: #030303;
+    display: flex;
+    height: 100vh;
+    color: #ffffff;
+}
+
+.navbar {
+    width: 25%;
+    min-width: 200px;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    padding-top: 65px;
+    width: 65%;
+}
+
+.navbar ul li {
+    padding: 12px;
+    text-align: left;
+}
+
+.navbar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+}
+
+.line {
+    width: 0%;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+    transition: all .3s;
+}
+
+.navbar ul li:hover {
+    .line {
+        width: 60%;
+    }
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    width: 75%;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.planet_name {
+    margin-top: 40px;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.planet_image {
+    width: 65%;
+    height: auto;
+    position: fixed;
+    margin-top: 120px;
+    transform: rotateZ(0deg);
+}
+
+.logo {
+    width: 60%;
+    height: auto;
+    padding-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        width: 25%;
+    }
+
+    .content {
+        width: 75%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        width: 30%;
+    }
+
+    .content {
+        width: 70%;
+    }
+}

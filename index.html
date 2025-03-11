@@ -1,13 +1,65 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon" href="./public/img/logo_icon.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SPACE</title>
+</head>
+
+<body>
+  <div class="navbar">
+    <img class="logo" src="./public/img/Logo.png" alt="logo">
+    <ul>
+      <li>
+        <a href="#">Mercury</a>
+        <div class="line"></div>
+      </li>
+      <li>
+        <a href="#">Venus</a>
+        <div class="line"></div>
+      </li>
+      <li>
+        <a href="#">Earth</a>
+        <div class="line"></div>
+      </li>
+      <li>
+        <a href="#">Mars</a>
+        <div class="line"></div>
+      </li>
+      <li>
+        <a href="#">Jupiter</a>
+        <div class="line"></div>
+      </li>
+      <li>
+        <a href="#">Saturn</a>
+        <div class="line"></div>
+      </li>
+      <li>
+        <a href="#">Uranus</a>
+        <div class="line"></div>
+      </li>
+      <li>
+        <a href="#">Neptune</a>
+        <div class="line"></div>
+      </li>
+    </ul>
+  </div>
+  <div class="content">
+    <div>
+      <p class="planet_name"></p>
+      <p class="planet_description"></p>
+    </div>
+    <img class="planet_image" src="./public/img/test_planet.png" alt="planet_image">
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
 </html>
